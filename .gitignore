@@ -1,0 +1,13 @@
+*.swp
+*.bak
+*.log
+*~
+
+/*/.git/
+
+Code/
+omarchy/.config/omarchy/themes/
+chromium/
+
+.DS_Store
+Thumbs.db
