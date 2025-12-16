@@ -10,7 +10,8 @@ source ~/.local/share/omarchy/default/bash/rc
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 alias wegc203108='ssh -X  thk@wegc203108.uni-graz.at'
-
+alias cd='z'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
