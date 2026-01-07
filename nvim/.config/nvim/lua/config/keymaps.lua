@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 -- vim.keymap.set('n', '<CR>', 'o<Esc>k')
 vim.keymap.set('n', '<S-CR>', 'O<Esc>j')
+vim.keymap.set("n", "gp", "<cmd>Lspsaga peek_definition<cr>")
