@@ -27,3 +27,27 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+alias mount108='sshfs thk@wegc203108.uni-graz.at:/nas/home/thk/ ~/external/wegc203108/'
+alias mount108_home='sshfs thk@wegc203108.uni-graz.at:/home/ ~/external/wegc203108/'
+alias unmount108='fusermount -u ~/external/wegc203108/'
+
+open_all() {
+    # Check if a search string was provided
+    if [ -z "$1" ]; then
+        echo "Usage: open_all 'search_string'"
+        return 1
+    fi
+
+    # Find files and open them in Neovim
+    # -l: only filenames, -0: null-terminated to handle filenames with spaces
+    files=$(rg -l "$1")
+
+    if [ -z "$files" ]; then
+        echo "No files found containing: $1"
+    else
+        nvim $files
+    fi
+}
+
+
+alias bizhawk='/home/thk/bizhawk/EmuHawkMono.sh'
