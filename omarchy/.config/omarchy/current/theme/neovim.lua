@@ -1,13 +1,9 @@
 return {
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-	},
+	{ "rebelot/kanagawa.nvim" },
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "catppuccin",
+			colorscheme = "kanagawa",
 		},
 	},
 }
