@@ -1,1 +1,7 @@
-dotfiles/bash/.bash_aliases
+alias wegc203108='ssh -X  thk@wegc203108.uni-graz.at'
+alias cd='z'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+alias mount108='sshfs thk@wegc203108.uni-graz.at:/nas/home/thk/ ~/external/wegc203108/'
+alias mount108_home='sshfs thk@wegc203108.uni-graz.at:/home/ ~/external/wegc203108/'
+alias bizhawk='/home/thk/bizhawk/EmuHawkMono.sh'
+alias unmount108='fusermount -u ~/external/wegc203108/'
