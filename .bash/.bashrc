@@ -2,7 +2,9 @@
 
 [[ $- != *i* ]] && return
 
-
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # All the default Omarchy aliases and functions
 
