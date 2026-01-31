@@ -25,3 +25,6 @@ vim.keymap.set('i', '<C-w>', '<C-o>w')
 -- new lines in insert mode
 vim.keymap.set('i', '<A-CR>', '<C-o>o')
 vim.keymap.set('i', '<S-CR>', '<C-o>O')
+
+vim.keymap.set('n', '<C-d>', '<C-d><zz')
+vim.keymap.set('n', '<C-u>', '<C-u><zz')

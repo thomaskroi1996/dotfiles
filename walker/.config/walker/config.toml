@@ -1,3 +1,5 @@
+style = "style.css"
+
 force_keyboard_focus = true                                                 # forces keyboard forcus to stay in Walker
 selection_wrap = true                                                       # wrap list if at bottom or top
 theme = "omarchy-default"                                                   # theme to use
@@ -19,6 +21,9 @@ default = [
   "desktopapplications",
   "websearch",
 ]
+
+[ui]
+rounding = 15
 
 [[providers.prefixes]]
 prefix = "/"
